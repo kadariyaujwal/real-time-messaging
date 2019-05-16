@@ -1,0 +1,18 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+
+  <div class="row">
+    <div class="col-md-3 mt-5" *ngFor="let message of messages">
+      <div class="card">
+          <p><strong>Message:</strong> {{message.message}}</p>
+          <p><strong>Priority:</strong>  {{message.priority}}</p>
+          <p><strong>Timestamp:</strong> {{message.timestamp}}</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
